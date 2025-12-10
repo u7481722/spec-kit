@@ -237,6 +237,11 @@ When creating this spec from a user prompt:
 - Authentication method: Standard session-based or OAuth2 for web apps
 - Integration patterns: RESTful APIs unless specified otherwise
 
+
+### Use Case Diagram
+對於用戶描述的需求，產生對應的use case，並且使用Plan UML語法。
+
+
 ### Success Criteria Guidelines
 
 Success criteria must be:

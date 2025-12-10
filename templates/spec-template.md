@@ -107,6 +107,12 @@
   These must be technology-agnostic and measurable.
 -->
 
+### Use Case Diagram
+
+<!--
+  產生符合需求的Use Case Diagram，並使用Plan UML語法
+-->
+
 ### Measurable Outcomes
 
 - **SC-001**: [Measurable metric, e.g., "Users can complete account creation in under 2 minutes"]

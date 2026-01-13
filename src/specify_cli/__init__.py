@@ -1222,9 +1222,12 @@ def init(
 
     steps_lines.append("   2.1 [cyan]/speckit.constitution[/] - Establish project principles")
     steps_lines.append("   2.2 [cyan]/speckit.specify[/] - Create baseline specification")
-    steps_lines.append("   2.3 [cyan]/speckit.plan[/] - Create implementation plan")
-    steps_lines.append("   2.4 [cyan]/speckit.tasks[/] - Generate actionable tasks")
-    steps_lines.append("   2.5 [cyan]/speckit.implement[/] - Execute implementation")
+    # --- 新增這一行 ---
+    steps_lines.append("   2.3 [cyan]/speckit.explore[/] - Explore DB Schema & Class Diagrams")
+    # ----------------
+    steps_lines.append("   2.4 [cyan]/speckit.plan[/] - Create implementation plan")
+    steps_lines.append("   2.5 [cyan]/speckit.tasks[/] - Generate actionable tasks")
+    steps_lines.append("   2.6 [cyan]/speckit.implement[/] - Execute implementation")
 
     steps_panel = Panel("\n".join(steps_lines), title="Next Steps", border_style="cyan", padding=(1,2))
     console.print()

@@ -1,3 +1,22 @@
+
+---
+description: 執行技術探索，進行資料庫建模並生成 PlantUML 類別圖。
+handoffs:
+- label: Create Implementation Plan
+  agent: speckit.plan
+  prompt: Based on the exploration results, create a detailed implementation plan.
+  scripts:
+  sh: .specify/scripts/explore.sh
+  ps: .specify/scripts/explore.ps1
+---
+
+
+## User Input
+
+```text
+$ARGUMENTS
+```
+
 # Role: Senior Backend Architect
 # Context: Based on `spec.md`, explore the data structure and storage strategy.
 

@@ -1,9 +1,9 @@
 ---
 description: Create or update the feature specification from a natural language feature description.
 handoffs: 
-  - label: Build Technical Plan
-    agent: speckit.plan
-    prompt: Create a plan for the spec. I am building with...
+  - label: Build DB Selection Plan
+    agent: speckit.explore
+    prompt: 請選擇適合此功能的資料庫(SQL，NoSQL或其他)
   - label: Clarify Spec Requirements
     agent: speckit.clarify
     prompt: Clarify specification requirements

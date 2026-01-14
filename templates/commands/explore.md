@@ -1,13 +1,16 @@
-
 ---
-description: 執行技術探索，進行資料庫建模並生成 PlantUML 類別圖。
+description: Create or update the feature specification from a natural language feature description.
 handoffs:
-- label: Create Implementation Plan
+- label: Build Technical Plan
   agent: speckit.plan
-  prompt: Based on the exploration results, create a detailed implementation plan.
+  prompt: Create a plan for the spec. I am building with...
+- label: Clarify Spec Requirements
+  agent: speckit.clarify
+  prompt: Clarify specification requirements
+  send: true
   scripts:
-  sh: .specify/scripts/explore.sh
-  ps: .specify/scripts/explore.ps1
+  sh: scripts/bash/create-new-feature.sh --json "{ARGS}"
+  ps: scripts/powershell/create-new-feature.ps1 -Json "{ARGS}"
 ---
 
 

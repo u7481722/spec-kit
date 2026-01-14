@@ -17,6 +17,8 @@ handoffs:
 $ARGUMENTS
 ```
 
+You **MUST** consider the user input before proceeding (if not empty).
+
 # Role: Senior Backend Architect
 # Context: Based on `spec.md`, explore the data structure and storage strategy.
 
